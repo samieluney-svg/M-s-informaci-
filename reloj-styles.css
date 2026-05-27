@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.nav-back {
+    margin-bottom: 30px;
+}
+
+.nav-back a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.nav-back a:hover {
+    transform: translateX(-5px);
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+}
+
+.clock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.clock-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clock-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+}
+
+.timezone-name {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.timezone-code {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85em;
+    margin-bottom: 15px;
+}
+
+.clock-display {
+    background: rgba(0, 0, 0, 0.2);
+    color: #00ff00;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.local-time {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(245, 87, 108, 0.2);
+}
+
+.local-time h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.local-clock-display {
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffff00;
+    font-size: 3.5em;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255, 255, 0, 0.6);
+    margin-bottom: 15px;
+}
+
+.local-timezone {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .clock-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .clock-display {
+        font-size: 1.8em;
+    }
+
+    .local-clock-display {
+        font-size: 2.5em;
+    }
+}

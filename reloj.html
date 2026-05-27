@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital - Zonas Horarias</title>
+    <link rel="stylesheet" href="reloj-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-back">
+            <a href="index.html">← Tornar</a>
+        </div>
+        
+        <div class="content">
+            <h1>Reloj Digital Mundial</h1>
+            <p class="subtitle">Hora actual en diferentes zonas horarias</p>
+            
+            <div class="clock-grid">
+                <div class="clock-card">
+                    <div class="timezone-name">Madrid (España)</div>
+                    <div class="timezone-code">Europe/Madrid</div>
+                    <div class="clock-display" id="clock-madrid">00:00:00</div>
+                </div>
+
+                <div class="clock-card">
+                    <div class="timezone-name">Nueva York (USA)</div>
+                    <div class="timezone-code">America/New_York</div>
+                    <div class="clock-display" id="clock-ny">00:00:00</div>
+                </div>
+
+                <div class="clock-card">
+                    <div class="timezone-name">Londres (UK)</div>
+                    <div class="timezone-code">Europe/London</div>
+                    <div class="clock-display" id="clock-london">00:00:00</div>
+                </div>
+
+                <div class="clock-card">
+                    <div class="timezone-name">Tokio (Japón)</div>
+                    <div class="timezone-code">Asia/Tokyo</div>
+                    <div class="clock-display" id="clock-tokyo">00:00:00</div>
+                </div>
+
+                <div class="clock-card">
+                    <div class="timezone-name">Sídney (Australia)</div>
+                    <div class="timezone-code">Australia/Sydney</div>
+                    <div class="clock-display" id="clock-sydney">00:00:00</div>
+                </div>
+
+                <div class="clock-card">
+                    <div class="timezone-name">Dubai (EAU)</div>
+                    <div class="timezone-code">Asia/Dubai</div>
+                    <div class="clock-display" id="clock-dubai">00:00:00</div>
+                </div>
+
+                <div class="clock-card">
+                    <div class="timezone-name">Bangkok (Tailandia)</div>
+                    <div class="timezone-code">Asia/Bangkok</div>
+                    <div class="clock-display" id="clock-bangkok">00:00:00</div>
+                </div>
+
+                <div class="clock-card">
+                    <div class="timezone-name">São Paulo (Brasil)</div>
+                    <div class="timezone-code">America/Sao_Paulo</div>
+                    <div class="clock-display" id="clock-saopaulo">00:00:00</div>
+                </div>
+            </div>
+            
+            <div class="local-time">
+                <h2>Tu zona horaria local:</h2>
+                <div class="local-clock-display" id="clock-local">00:00:00</div>
+                <div class="local-timezone" id="local-tz">Detectando...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="reloj-script.js"></script>
+</body>
+</html>
